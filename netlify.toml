@@ -12,7 +12,7 @@
   
   [plugins.inputs]
     # Specify which environment variables to make available at runtime
-    vars = ["SUPABASE_URL", "SUPABASE_ANON_KEY"]
+    vars = ["SUPABASE_DATABASE_URL", "SUPABASE_ANON_KEY"]
 
 [[redirects]]
   from = "/*"
