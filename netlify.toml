@@ -11,8 +11,9 @@
   package = "netlify-plugin-use-env-in-runtime"
   
   [plugins.inputs]
-    # Specify which environment variables to make available at runtime
-    vars = ["SUPABASE_DATABASE_URL", "SUPABASE_ANON_KEY"]
+    # Use prefix to inject all environment variables starting with "SUPABASE_"
+    # They will be available as window.env.SUPABASE_DATABASE_URL, window.env.SUPABASE_ANON_KEY, etc.
+    prefix = "SUPABASE_"
 
 [[redirects]]
   from = "/*"
